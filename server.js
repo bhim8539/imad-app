@@ -38,23 +38,9 @@ var articleTwo: { title:'Article-Two ! Himanshu',
   date:'21 Aug,2017',
   content:
     ` <p>
-              This is content for my first article.This is content for my first article.This is content for my first article.
-              This is content for my first article.This is content for my first article.This is content for my first article.
-              This is content for my first article.This is content for my first article.This is content for my first article.
-          
-      </p>
-           <p>
-              This is content for my first article.This is content for my first article.This is content for my first article.
-              This is content for my first article.This is content for my first article.This is content for my first article.
-              This is content for my first article.This is content for my first article.This is content for my first article.
-          
-          </p>
-           <p>
-              This is content for my first article.This is content for my first article.This is content for my first article.
-              This is content for my first article.This is content for my first article.This is content for my first article.
-              This is content for my first article.This is content for my first article.This is content for my first article.
-          
-          </p>`
+              This is content for second first article.
+             
+        </p>  `
  
  },
 var articleThree: { title:'Article-Three ! Himanshu',
@@ -62,22 +48,8 @@ var articleThree: { title:'Article-Three ! Himanshu',
   date:'21 Aug,2017',
   content:
     ` <p>
-              This is content for my first article.This is content for my first article.This is content for my first article.
-              This is content for my first article.This is content for my first article.This is content for my first article.
-              This is content for my first article.This is content for my first article.This is content for my first article.
-          
-      </p>
-           <p>
-              This is content for my first article.This is content for my first article.This is content for my first article.
-              This is content for my first article.This is content for my first article.This is content for my first article.
-              This is content for my first article.This is content for my first article.This is content for my first article.
-          
-          </p>
-           <p>
-              This is content for my first article.This is content for my first article.This is content for my first article.
-              This is content for my first article.This is content for my first article.This is content for my first article.
-              This is content for my first article.This is content for my first article.This is content for my first article.
-          
+              This is content for my second article.
+              
           </p>`
  
  }
