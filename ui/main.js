@@ -4,6 +4,6 @@ element.innerHTML='New Value';
 var img=document.getElementById('madi');
 img.onclick=function()
 {
+    var interval=setInerval(moveRight,100);
     
-    img.style.marginLeft='100px';
 };
