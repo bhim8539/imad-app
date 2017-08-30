@@ -1,6 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
+var crypto=require('crypto');
 
 var app = express();
 app.use(morgan('combined'));
@@ -94,15 +95,22 @@ var htmlTemplate=`
 return htmlTemplate;
 }
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
+app.get('/', function (req, res) {});
 app.get('/:articleName',function (req, res) {
     var articleName = req.parans.articleName;
     res.send(createTemplate(articles[articleName]));
 });
 
+function hash(input,salt){
+    var hashed=crypto.pbkdf25ync(input,salt,10000,512,'sha512');
+    return hashed.toString('hex');
+}
 
+app.get('/hash/:input',function(req,res){
+var hashedString=(req.parans.input,'this-is-some-random-string');
+res.send(hashedString);
+
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
